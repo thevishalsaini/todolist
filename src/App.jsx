@@ -22,7 +22,6 @@ function App() {
   };
 
   const toggleComplete = (id) => {
-    //console.log(id);
     setTodos((prev) =>
       prev.map((prevTodo) =>
         prevTodo.id === id
@@ -50,6 +49,15 @@ function App() {
     >
       <div className="bg-[#172842] min-h-screen py-8">
         <div className="w-full max-w-2xl mx-auto shadow-md rounded-lg px-4 py-3 text-white">
+          <h1 className="text-md font-bold text-right mb-10 mt-[-2px]">
+            Created by{" "}
+            <a
+              className="text-red-500 "
+              href="https://www.instagram.com/thevishalsaini01/"
+            >
+              Vishal Saini
+            </a>
+          </h1>
           <h1 className="text-2xl font-bold text-center mb-8 mt-2">
             Manage Your Todos
           </h1>
