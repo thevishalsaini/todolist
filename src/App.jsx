@@ -16,7 +16,7 @@ function App() {
       prev.map((prevTodo) => (prevTodo.id === id ? todo : prevTodo))
     );
   };
-
+/** delete todo */
   const deleteTodo = (id) => {
     setTodos((prev) => prev.filter((todo) => todo.id !== id));
   };
